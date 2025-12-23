@@ -1,6 +1,7 @@
 import CardLoader from '@/components/loaders/card-loader'
 import Filter from '@/components/shared/filter'
 import { Separator } from '@/components/ui/separator'
+import { Suspense } from 'react'
 import AddProduct from '../_components/add-product'
 
 function Loading() {
@@ -12,7 +13,9 @@ function Loading() {
 			</div>
 
 			<Separator className='my-2' />
-			<Filter showCategory />
+			<Suspense>
+				<Filter showCategory />
+			</Suspense>
 
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-3'>
 				{Array.from({ length: 6 }).map((_, i) => (
