@@ -34,3 +34,5 @@ const RootLayout: FC<ChildProps> = ({ children }) => {
 }
 
 export default RootLayout
+
+//https://youtu.be/mviBKFUdlBc?si=abHbpzDhXhE3SusR

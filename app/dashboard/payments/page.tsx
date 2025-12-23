@@ -40,7 +40,7 @@ async function Page({ searchParams }: searchParamsProps) {
 			<Separator className='my-3' />
 
 			<Table className='text-sm'>
-				<TableCaption>A list of your recent orders.</TableCaption>
+				<TableCaption>A list of your recent payments.</TableCaption>
 				<TableHeader>
 					<TableRow>
 						<TableHead>Image</TableHead>
@@ -54,7 +54,7 @@ async function Page({ searchParams }: searchParamsProps) {
 					{transactions && transactions.length === 0 && (
 						<TableRow>
 							<TableCell colSpan={4} className='text-center'>
-								Orders not found
+								Payments not found
 							</TableCell>
 						</TableRow>
 					)}
